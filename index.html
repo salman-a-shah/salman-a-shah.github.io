@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow" style="width: 100%;">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Salman Shah</h1>
+            <h2>Machine Learning Engineer</h2>
+            <a href="files/salman-shah-resume.pdf" target="_blank" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <h2 class="heading" >About Me</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img style="max-width:80%" src="images/profile-pic.png">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Hi, thanks for visiting my page. My name is Salman. I'm a self taught machine learning engineer looking to help companies near LA county with their software and machine learning projects.
+                    </p>
+                    <p>
+                        I have a Bachelor's in Mathematics and I'm currently finishing up an intense machine learning bootcamp course at Springboard. For my capstone project, I've designed and image super resolution model and deployed it as a free public service.
+                    </p>
+                    <p>
+                        Most recently, I've worked at a financial company where I bootstrapped a data science department from scratch and developed a machine learning product that increased underwriting efficiency by 25%. The product used NLP techniques to automate a tedious, time consuming data collection process from customers' bank accounts and summarized relevant details in a manner that makes it easy to underwrite. The tech stack used was Python (Flask framework, scikit-learn for ML), Windows Server, and IIS.
+                    </p>
+                    <p>
+                        Further, I've volunteered at XSCAPE Games—a video game startup that is working to build a real life mario cart game. At XSCAPE, I designed a controller system and a motion control system that allowed players to drive an RC using a simulator and finalized their prototype. I also served as an advisor for other developers.
+                    </p>
+                    <p>
+                        If you're looking for a smart, talented, hard-working engineer to join your team and assist you in your projects, shoot me a message on LinkedIn or email. I'd be happy to see how I can help.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="September 2019 – March 2020">
+                <h3>Wide Merchant Group</h3>
+                <h4>Machine Learning Engineer</h4>
+            </div>
+
+            <div data-date="June 2019 – March 2020">
+                <h3>XSCAPE Games</h3>
+                <h4>Software Engineer</h4>
+            </div>
+
+            <div data-date="July 2018 – February 2019">
+                <h3>Wide Merchant Group</h3>
+                <h4>Underwriter</h4>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        
+        <!-- .education block -->
+        <div class="education-block">
+            <h3>Springboard - Machine Learning Engineer Career Track</h3>
+            <span class="education-date">Expected May 2020</span>
+            <h4>Certificate</h4>
+        </div>
+        <!-- End .education-block -->
+
+        <!-- .education block -->
+        <div class="education-block">
+            <h3>University of California Los Angeles (UCLA)</h3>
+            <span class="education-date">June 2018</span>
+            <h4>Bachelor of Science in Mathematics</h4>
+        </div>
+        <!-- End .education-block -->
+
+        <!-- .education block -->
+        <div class="education-block">
+            <h3>Orange Coast College</h3>
+            <span class="education-date">Sept 2016</span>
+            <h4>Certificate of Specialization in C++ Programming</h4>
+        </div>
+        <!-- End .education-block -->
+
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/springboard.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Image Super-resolution using Residual Networks</h3>
+                        <h4>February 2020</h4>
+                        <p>
+                            My capstone project for Springboard. For this project, I worked 1-on-1 with a mentor to build a model that increases the resolution of an image 2x using a residual neural network. The model implemenation is in tensorflow/keras. The deployment uses Flask as the web framework and a free Linux server from pythonanywhere.com
+                        </p>
+                        <p>
+                            <a href="https://github.com/salman-a-shah/Springboard" target="_blank">View Project</a>  |  
+                            <a href="https://thephilosopher.pythonanywhere.com/" target="_blank">View Demo</a>  |  
+                            <a href="https://github.com/salman-a-shah/image-supersizer" target="_blank">View Deployment Code</a>
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/xscape_rc_cars.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Real Life Mario Kart</h3>
+                        <h4>November 2019</h4>
+                        <p>
+                            A startup project that I volunteered for. I designed the controller and motion control backend for the CXC simulator. The incoming telemetry data was trasmitted over UDP using a Pixracer mounted on the RC car. The prototype was designed using Python (primarily Pygame and pymavlink)
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/nMiHR5p-IN8" target="_blank">View Demo</a> |
+                            <a href="https://www.xscapegames.com/" target="_blank">View xSCAPE Website</a>
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/ai-underwriter.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>AI Underwriter</h3>
+                        <h4>May 2019</h4>
+                        <p>
+                            A project designed to demonstrate the applicability of machine learning tools to automate underwriting procedures. Experience from this project had helped tremendously in delivering my ML product at Wide Merchant Group
+                        </p>
+                        <a href="https://github.com/salman-a-shah/AI-Underwriter" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/autoencoder.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Autoencoder</h3>
+                        <h4>June 2018</h4>
+                        <p>
+                            A group project during my final quarter at UCLA. In this project, we taught an AI to produce handwritten numbers. The model implemenation was in Keras. We used gaussian mixture sampling to sample from the encoded vector space
+                        </p>
+                        <a href="https://github.com/salman-a-shah/Image-Generating-Autoencoder" target="_blank">View Project</a> |
+                        <a href="files/autoencoder-paper.pdf" target="_blank">View Paper</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Machine Learning</li>
+            <li>Software Engineering</li>
+            <li>Mathematical Modeling</li>
+            <li>Python</li>
+            <li>Scikit-Learn</li>
+            <li>Keras</li>
+            <li>Tensorflow</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>SQL</li>
+            <li>Flask</li>
+            <li>ASP.NET</li>
+            <li>jQuery</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>IIS</li>
+            <li>Visual Studio</li>
+            <li>Git</li>
+            <li>Vim</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2020 Salman Shah
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/salman-a-shah" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/salman-a-shah" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
